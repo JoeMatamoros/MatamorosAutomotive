@@ -1,0 +1,173 @@
+
+/*Estilos para el encabezado*/
+
+
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+
+/*Fin de Menù lateral*/
+
+main{
+  background-color: white;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  line-height: 2em;
+}
+
+main h2{
+	padding: 1em;
+	margin: 0em;	
+	color: black;
+	font-size: 2em;
+	text-align: center;
+}
+
+main h3{
+ padding: 1em;
+ margin: 0em;
+ color: #0f4c75;
+  text-align: center;
+}
+.nosotros p{
+	padding: 0em 2em 0.5em 2em;
+	margin: 0em;
+	color: black;
+	justify-content:center;	
+	text-align: center;
+}
+div.information p{
+	padding: 0em 2em 0.5em 2em;
+	margin: 0em;
+	color: rgb(7, 7, 7);
+	justify-content:center;	
+	text-align: center;
+}
+
+div.informacion-div{
+	background-color:#fddb3a;
+	margin: 1em;
+}
+
+ div.contacto p{
+	padding: 0em 2em 0.5em 2em;
+	margin: 0em;
+	color: rgb(7, 7, 7);
+	
+}
+
+
+/*****************************************footer*************************/
+footer
+{
+	width: 100%;
+	background: #0f4c75;
+	color: #f6f4e6;
+	padding-top: 40px;
+}
+
+.contairner-footer-all
+{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px;
+}
+.container-body
+{
+	display: flex;
+	justify-content: space-between;
+}
+.colum1
+{
+	max-width: 400px;
+
+}
+.colum1 h1
+{
+	font-size: 22px;
+}
+.colum1 p
+{
+	font-size: 14px;
+	color: #f6f4e6;
+	margin-top: 70px;
+}
+.colum2 
+{
+	max-width: 400px;
+}
+.colum2 h1
+{
+	font-size: 22px;
+}
+.row
+{
+	margin-top: 20px;
+	display: flex;
+}
+.row img
+{
+	width: 36px;
+	height: 36px;
+}
+.row label
+{
+	margin-top: 10px;
+	margin-left: 20px;
+	color: #f6f4e6;
+}
+
+.colum3 
+{
+	max-width: 400px;
+}
+.colum3 h1
+{
+	font-size: 22px;
+}
+.row2
+{
+	margin-top: 20px;
+	display: flex;
+}
+.row2 img
+{
+	width: 36px;
+	height: 36px;
+}
+.row2 label
+{
+	margin-top: 10px;
+	margin-left: 20px;
+	max-width: 140px;
+}
+.container-footer
+{
+	width: 100%;
+	background: #1b262c;
+}
+.footer
+{
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+.copyright 
+{
+	color: #f6f4e6;
+}
+.copyright a
+{
+	text-decoration: none;
+	color: #f6f4e6;
+}
+.information a
+{
+	text-decoration: none;
+	color: #f6f4e6;
+}
+

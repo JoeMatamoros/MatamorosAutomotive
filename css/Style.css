@@ -1,0 +1,360 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto',sans-serif;
+}
+
+body{
+	background-color:#f6f4e6;
+	background-repeat: no-repeat;
+	max-width: 100%;
+}
+
+.header{
+	width: 100%;
+	height: 70px;
+	background-color: #0f4c75;
+	box-shadow: 0px 2px 5px #52575d;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.esconder{
+	display: none;
+}
+
+section.container{
+	width: 100%;
+}
+
+section.container .btn-menu, .logo{
+	float: left;
+}
+
+section.container .btn-menu label{
+	color: #f6f4e6;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+section.logo h1{
+	font-weight: 400;
+	font-size: 22px;
+	margin-left: 10px;
+}
+
+section.logo a{
+	text-decoration: none;
+	color: #f6f4e6;
+}
+
+section.container .menu{
+	float: right;
+	line-height: 70px;
+}
+
+section.container .menu a{
+	display: inline-block;
+	padding: 10px 10px;
+	line-height: normal;
+	text-decoration: none;
+	color: #f6f4e6;/*Menu*/
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+}
+
+section.container .menu a:hover{
+	border-bottom: 2px solid #fddb3a;
+	padding: 5px 10px;
+}
+
+section.container-menu{
+	position: absolute;
+	background: rgba(0,0,0,0.5);		
+	width: 100%;
+	height: 54.6em;/**/
+	top: 4.4em;
+	left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+section .cont-menu h2{
+	font-family: 'Roboto',sans-serif;
+	text-align:center;
+	color: #f6f4e6;
+}
+
+section .cont-menu .con-menu a{
+	color: #f6f4e6;	
+}
+
+.cont-menu{
+	width: 100%;
+	max-width: 250px;
+	background: #0f4c75;		
+	height: 54.6em;
+	position: relative;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+
+.cont-menu nav{
+	transform: translateY(15%);
+}
+
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 18px;
+	color: #41444b;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+	color: #f6f4e6;
+	border-left: 5px solid #fddb3a;
+	background: #52575d;	
+}
+
+.cont-menu label{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: #f6f4e6;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+
+
+
+
+
+/*body*/
+section .vehiculo{
+	background-color: #fddb3a;
+	padding: 10px;
+	text-align: center;
+}
+
+section .vehiculo form{
+	justify-content: center;
+	display: flex;
+}
+
+section .vehiculo form button{
+	border-radius: 2px;
+	margin-bottom: 5px;
+}
+
+section .VehiculoPrincipal{
+	background-color: rgb(38, 110, 243);
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+section .VehiculoPrincipal form {
+	justify-content: center;
+	display: flex;
+}
+
+section .VehiculoPrincipal form button{
+	border-radius: 2px;
+	margin-bottom: 5px;
+}
+
+section .media{
+	padding: 20px;
+	margin: 5px;
+	background-color: #1b262c;
+	color: white;
+}
+
+section .media img{
+	border-radius: 50%;
+}
+
+section .media-body{
+	margin: 10px;
+}
+
+
+
+
+
+
+
+
+/*footer*/
+footer
+{
+	width: 100%;
+	background: #0f4c75;
+	color: #f6f4e6;
+	padding-top: 40px;
+}
+
+.contairner-footer-all
+{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px;
+}
+
+.container-body
+{
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+}
+.colum1
+{
+	max-width: 400px;
+}
+.colum1 h1
+{
+	font-size: 22px;
+}
+.colum1 p
+{
+	font-size: 14px;
+	color: #f6f4e6;
+	margin-top: 70px;
+}
+.colum2 
+{
+	max-width: 400px;
+}
+.colum2 h1
+{
+	font-size: 22px;
+}
+.row
+{
+	margin-top: 20px;
+	display: flex;
+}
+.row img
+{
+	width: 36px;
+	height: 36px;
+}
+.row label
+{
+	margin-top: 10px;
+	margin-left: 20px;
+	color: #f6f4e6;
+}
+
+.colum3 
+{
+	max-width: 400px;
+}
+.colum3 h1
+{
+	font-size: 22px;
+}
+.row2
+{
+	margin-top: 20px;
+	display: flex;
+}
+.row2 img
+{
+	width: 36px;
+	height: 36px;
+}
+.row2 label
+{
+	margin-top: 10px;
+	margin-left: 20px;
+	max-width: 140px;
+}
+
+.container-footer
+{
+	width: 100%;
+	background: #1b262c;
+}
+
+.footer
+{
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+.copyright 
+{
+	color: #f6f4e6;
+}
+.copyright a
+{
+	text-decoration: none;
+	color: #f6f4e6;
+}
+.information a
+{
+	text-decoration: none;
+	color: #f6f4e6;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px){
+	.menu{
+		display: none;
+	}
+	
+	section.logo h1{
+		font-weight: 400;
+		font-size: 18px;
+	}
+
+	.esconder{
+		display: contents;
+	}
+
+	.container-body
+	{
+		flex-wrap: wrap;
+	}
+	
+	.colum1
+	{
+		max-width: 100%;
+	}
+	
+	.colum2, .colum3{
+		margin-top: 40px;
+	}
+
+	h2{
+		text-align: center;
+	}
+
+	.vehiculo{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.VehiculoPrincipal{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+

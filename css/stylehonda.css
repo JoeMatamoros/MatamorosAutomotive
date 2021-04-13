@@ -1,0 +1,387 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto',sans-serif;
+}
+body{
+	background-color:#f6f4e6;
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+}
+div.capa{
+	position: absolute;
+	width: 100%;
+	height: 100vh;	
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+/*Estilos para el encabezado*/
+.header{
+	width: 100%;
+	height: 70px;
+	background-color: #0f4c75;/*Menu superior*/
+	box-shadow: 0px 2px 5px #52575d;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+}
+section.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+section.container .btn-menu, .logo{
+	float: left;
+	line-height: 70px;
+}
+section.container .btn-menu label{
+	color: #f6f4e6;
+	font-size: 25px;
+	cursor: pointer;
+}
+section.logo h1{
+	
+	font-weight: 400;
+	font-size: 22px;
+	margin-left: 10px;
+}
+section.logo a{
+	text-decoration: none;
+	color: #f6f4e6;
+}
+section.container .menu{
+	float: right;
+	line-height: 70px;
+}
+section.container .menu a{
+	display: inline-block;
+	padding: 15px 10px;
+	line-height: normal;
+	text-decoration: none;
+	color: #f6f4e6;/*Menu*/
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+}
+section.container .menu a:hover{
+	border-bottom: 2px solid #fddb3a;
+	padding: 5px 10px;
+}
+
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu{
+	display: none;
+}
+section.container-menu{
+	position: absolute;
+	background: rgba(0,0,0,0.5);		
+	width: 100%;
+	height: 54.6em;/**/
+	top: 4.4em;
+	left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+section .cont-menu h1{
+	font-family: 'Roboto',sans-serif;
+	text-align:center;
+	color: #f6f4e6;
+}
+
+section .cont-menu .con-menu a{
+	color: #f6f4e6;	
+}
+#btn-menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
+	
+}
+.cont-menu{
+	width: 100%;
+	max-width: 250px;
+	background: #0f4c75;		
+	height: 54.6em;
+	position: relative;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+	transform: translateX(0%);
+}
+.cont-menu nav{
+	transform: translateY(15%);
+}
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: #41444b;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+	color: #f6f4e6;
+	border-left: 5px solid #fddb3a;
+	background: #52575d;	
+}
+.cont-menu label{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: #f6f4e6;
+	cursor: pointer;
+	font-size: 18px;
+}
+/*Fin de Menù lateral*/
+
+section.principal{
+	padding: 1px 1px;
+	padding-top: 4em;	
+	margin: 1em auto;
+	display: flex;
+	flex-wrap: wrap;
+	overflow:auto;
+	align-content: center;
+	justify-content: center;
+  }
+  section.principal .vehiculo{
+	width: 380px;
+	height: auto;
+    border-radius: 0.25rem;
+    flex-direction: column;
+    background-color: #fddb3a;
+    box-shadow: 0px 2px 2px rgb(82, 87, 93);
+    padding: 1em;
+	margin-top: 0.25em;
+	margin: 1em;
+    display: flex;
+	justify-content: center;
+    align-items:center;	
+  }
+
+  section.principal .vehiculo h1
+  {
+	  margin-top: 1em;
+	  margin-bottom: 1em;
+	  color: #1b262c;
+	  text-align: center;
+  }
+  section.principal .vehiculo p
+  {
+	  color: #1b262c;
+	  text-align: center;
+  }
+/*********************REQUERIMIENTOS*************************/
+section.titulo h2{
+	align-content: center;
+	justify-content: center;
+	display: flex;
+	font-size: 40px;
+	}
+section.lineamientos{
+	padding-top: 10px;
+	width: 90%;
+	align-items: center;
+	justify-content: center;
+	margin-left: 70px;	
+}
+	
+section.lineamientos .box{
+	margin:5px;
+	border: #fddb3a solid;
+	height: 100px;
+}
+	
+section.lineamientos .box p{
+	padding-top: 40px;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+main{
+	margin-top: 5em;
+}
+section.lineamientos .box img{
+	float: right;
+	width: 95px;
+	margin-right: 10px;
+
+}
+/*********************Botones********************/
+  section.principal .vehiculo button{
+    border: solid 2px;
+	background-color: #0f4c75;
+	color: #f6f4e6;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1em 2em;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    cursor: pointer;
+	border-radius: 50px;
+	transition: all 0.25s;
+	margin: 2em;	
+}
+
+section.principal .vehiculo button:hover
+{
+	transform: translateY(-5px); 
+   box-shadow: 0px 8px 7px #f6f4e6;
+}
+
+/******************Grid**************************************************/
+
+.row {
+    display:flex;
+    flex-wrap: wrap;
+    padding:0.5em 1em;
+    border:1px solid rgba(255, 255, 255, 0);
+    width:100%;
+  }
+  
+  [class*="col-"]{
+    width:100%;
+    border:1px solid rgba(255, 255, 255, 0);
+    transition: width 0.5s ease;
+    padding:1em;
+  }
+    
+  .col-sm-6 {
+    width: calc(100%/(12/6));
+  }
+
+/*****************************************footer*************************/
+footer
+{
+	width: 100%;
+	background: #0f4c75;
+	color: #f6f4e6;
+	padding-top: 40px;
+}
+
+.contairner-footer-all
+{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px;
+}
+.container-body
+{
+	display: flex;
+	justify-content: space-between;
+}
+.colum1
+{
+	max-width: 400px;
+
+}
+.colum1 h1
+{
+	font-size: 22px;
+}
+.colum1 p
+{
+	font-size: 14px;
+	color: #f6f4e6;
+	margin-top: 70px;
+}
+.colum2 
+{
+	max-width: 400px;
+}
+.colum2 h1
+{
+	font-size: 22px;
+}
+.row
+{
+	margin-top: 20px;
+	display: flex;
+}
+.row img
+{
+	width: 36px;
+	height: 36px;
+}
+.row label
+{
+	margin-top: 10px;
+	margin-left: 20px;
+	color: #f6f4e6;
+}
+
+.colum3 
+{
+	max-width: 400px;
+}
+.colum3 h1
+{
+	font-size: 22px;
+}
+.row2
+{
+	margin-top: 20px;
+	display: flex;
+}
+.row2 img
+{
+	width: 36px;
+	height: 36px;
+}
+.row2 label
+{
+	margin-top: 10px;
+	margin-left: 20px;
+	max-width: 140px;
+}
+.container-footer
+{
+	width: 100%;
+	background: #1b262c;
+}
+.footer
+{
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+.copyright 
+{
+	color: #f6f4e6;
+}
+.copyright a
+{
+	text-decoration: none;
+	color: #f6f4e6;
+}
+.information a
+{
+	text-decoration: none;
+	color: #f6f4e6;
+}
+
+
+@media screen and (max-width:1100px)
+{
+	.container-body
+	{
+		flex-wrap: wrap;
+	}
+	.colum1
+	{
+		max-width: 100%;
+	}
+	.colum2, .colum3{
+		margin-top: 40px;
+	}
+}
